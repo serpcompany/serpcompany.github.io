@@ -1,0 +1,1 @@
+function i(n,r){const t={...n};for(const o of r)delete t[o];return t}function u(n,r,t){typeof r=="string"&&(r=r.split(".").map(e=>{const s=Number(e);return Number.isNaN(s)?e:s}));let o=n;for(const e of r){if(o==null)return t;o=o[e]}return o!==void 0?o:t}export{u as g,i as o};

@@ -1,0 +1,1 @@
+export { default } from "file:///Users/devin/repos/projects/nuxt-astronaut-theme/node_modules/.pnpm/@nuxt+vite-builder@3.17.5_@types+node@24.0.3_lightningcss@1.30.1_magicast@0.3.5_rollup@4.44.0_qvxdou6lazrpiriinx3dxlo5ya/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
