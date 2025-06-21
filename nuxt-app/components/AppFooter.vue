@@ -4,23 +4,21 @@ const appConfig = useAppConfig()
 
 const items: NavigationMenuItem[] = [
   {
-    label: 'Figma Kit',
-    to: 'https://www.figma.com/community/file/1288455405058138934',
+    label: '#',
+    to: '#',
     target: '_blank'
   },
   {
-    label: 'Playground',
-    to: 'https://stackblitz.com/edit/nuxt-ui',
-    target: '_blank'
+    label: '#',
+    to: '#',
   },
   {
-    label: 'Roadmap',
-    to: '/roadmap'
+    label: '#',
+    to: '#'
   },
   {
-    label: 'Releases',
-    to: 'https://github.com/nuxt/ui/releases',
-    target: '_blank'
+    label: '#',
+    to: '#',
   }
 ]
 </script>
@@ -38,7 +36,7 @@ const items: NavigationMenuItem[] = [
         icon="i-lucide-link"
         color="neutral"
         variant="ghost"
-        to="https://serp.co"
+        to="https://serp.games"
         target="_blank"
         aria-label="Discord"
       />
@@ -54,7 +52,7 @@ const items: NavigationMenuItem[] = [
         icon="i-simple-icons-github"
         color="neutral"
         variant="ghost"
-        to="https://github.com/nuxt/nuxt"
+        to="https://github.com/{{ appConfig.githubUsername}}"
         target="_blank"
         aria-label="GitHub"
       />

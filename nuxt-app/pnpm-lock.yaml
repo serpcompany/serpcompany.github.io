@@ -8781,7 +8781,7 @@ snapshots:
       eslint: 9.29.0(jiti@2.4.2)
       eslint-import-context: 0.1.8(unrs-resolver@1.9.1)
       is-glob: 4.0.3
-      minimatch: 9.0.5
+      minimatch: 10.0.3
       semver: 7.7.2
       stable-hash-x: 0.1.1
       unrs-resolver: 1.9.1
