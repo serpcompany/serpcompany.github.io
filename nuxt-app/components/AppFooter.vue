@@ -4,21 +4,29 @@ const appConfig = useAppConfig()
 
 const items: NavigationMenuItem[] = [
   {
-    label: '#',
-    to: '#',
+    label: 'SERP',
+    to: 'https://serp.co',
     target: '_blank'
   },
   {
-    label: '#',
-    to: '#',
+    label: 'SERP AI',
+    to: 'https://serp.ai',
   },
   {
-    label: '#',
-    to: '#'
+    label: 'SERP Media',
+    to: 'https://serp.media'
   },
   {
-    label: '#',
-    to: '#',
+    label: 'SERP Games',
+    to: 'https://serp.games',
+  },
+  {
+    label: 'DAFT FM',
+    to: 'https://daft.fm',
+  },
+  {
+    label: 'Boxing Undefeated',
+    to: 'https://boxingundefeated.com',
   }
 ]
 </script>
