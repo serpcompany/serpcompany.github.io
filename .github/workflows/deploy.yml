@@ -56,6 +56,7 @@ jobs:
           pnpm run build
         env:
           NITRO_PRESET: static
+          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
