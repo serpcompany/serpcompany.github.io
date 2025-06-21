@@ -23,15 +23,12 @@ useHead({
 
 <template>
   <div>
-    <!-- Simple layout following Nuxt Content's blog example -->
     <UContainer v-if="post" class="py-8 max-w-4xl">
-      <!-- Back Link -->
       <NuxtLink to="/shop" class="inline-flex items-center gap-1 text-sm mb-8 hover:underline">
         <small>« Back to Shop</small>
       </NuxtLink>
 
       <article>
-        <!-- Hero Image -->
         <NuxtImg 
           v-if="post.image" 
           :src="post.image" 
@@ -41,12 +38,10 @@ useHead({
         
         <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ post.title }}</h1>
         
-        <!-- Description -->
         <p v-if="post.description" class="text-lg text-gray-600 dark:text-gray-400 mb-4">
           {{ post.description }}
         </p>
         
-        <!-- Meta Information -->
         <div class="flex flex-wrap items-center gap-4 mb-8 text-sm text-gray-500 dark:text-gray-400">
           <time v-if="post.publishDate">
             {{ new Date(post.publishDate).toLocaleDateString('en-US', { 
@@ -55,28 +50,25 @@ useHead({
               day: 'numeric' 
             }) }}
           </time>
-          <span v-if="post.category">
-            <UIcon name="i-lucide-folder" class="w-3 h-3 inline" />
+          <UBadge variant="outline" v-if="post.category">
             {{ post.category }}
-          </span>
+          </UBadge>
           <div v-if="post.tags?.length" class="flex flex-wrap gap-2">
             <UBadge 
               v-for="tag in post.tags" 
               :key="tag" 
               variant="subtle"
               size="xs"
+              color="info"
             >
               {{ tag }}
             </UBadge>
           </div>
         </div>
 
-        <!-- Content with prose styling -->
-        <div class="prose prose-gray dark:prose-invert max-w-none">
-          <ContentRenderer :value="post" />
-        </div>
-        
-        <!-- Link Hub Section -->
+        <ContentRenderer v-if="post" :value="post" />
+
+      
         <div class="mt-16 p-8 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 class="text-2xl font-bold mb-4">Related Links</h2>
           <p class="text-gray-600 dark:text-gray-400">

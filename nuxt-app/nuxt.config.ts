@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
+    '@nuxt/ui-pro',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
@@ -11,7 +12,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/test-utils',
     '@nuxt/scripts',
-    '@nuxt/ui-pro'
   ],
-  css: ['~/assets/css/main.css']
+
+  ui: {
+    colorMode: false,
+  },
+  css: ['~/assets/css/main.css'],
 })
