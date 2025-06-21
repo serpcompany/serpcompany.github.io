@@ -18,4 +18,13 @@ export default defineNuxtConfig({
     colorMode: false,
   },
   css: ['~/assets/css/main.css'],
+
+  // Static site generation for GitHub Pages
+  nitro: {
+    preset: 'static',
+  },
+
+  experimental: {
+    payloadExtraction: false,
+  },
 })

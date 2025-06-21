@@ -7,7 +7,9 @@
       "mcp__browser-tools__getConsoleLogs",
       "mcp__browser-tools__getConsoleErrors",
       "WebFetch(domain:ui.nuxt.com)",
-      "Bash(gh issue view:*)"
+      "Bash(gh issue view:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)"
     ],
     "deny": []
   }
