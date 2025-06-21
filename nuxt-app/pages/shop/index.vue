@@ -34,7 +34,7 @@ const totalPages = computed(() => {
 
 // SEO
 useHead({
-  title: 'Shop - Best Gaming Gear & Equipment',
+  title: 'Shop',
   meta: [
     { 
       name: 'description', 
@@ -48,8 +48,7 @@ useHead({
   <div>
     <!-- Hero Section -->
     <UPageHero
-      title="Shop Gaming Gear"
-      description="Find the perfect gaming equipment with our comprehensive reviews and buying guides"
+      title="Shop"
       :ui="{
         wrapper: 'py-16 sm:py-24',
         title: 'text-5xl sm:text-6xl',
@@ -60,7 +59,7 @@ useHead({
     <!-- Content Section -->
     <UContainer class="py-12">
       <div v-if="shopPosts && shopPosts.length > 0" class="space-y-8">
-        <h2 class="text-2xl font-bold">All Reviews</h2>
+        <h2 class="text-2xl font-bold">Browse</h2>
         
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <NuxtLink

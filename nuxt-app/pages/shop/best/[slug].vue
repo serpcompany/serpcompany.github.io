@@ -12,7 +12,6 @@ const { data: post } = await useAsyncData(pageId.value, () => {
     .first()
 })
 
-// SEO
 useHead({
   title: post.value?.title,
   meta: [
