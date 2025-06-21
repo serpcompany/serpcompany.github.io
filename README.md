@@ -72,7 +72,7 @@ title: "2 Person Gaming Desks"
 
 slug: "/shop/best/2-person-gaming-desks/"
 
-excerpt: "Discover the perfect gaming desk for two, seamlessly accommodating collaborative gameplay and simultaneous setup. Our article provides a comprehensive review of the best 2-person gaming desks on the market, helping you make an informed decision for your shared workspace."
+description: "Discover the perfect gaming desk for two, seamlessly accommodating collaborative gameplay and simultaneous setup. Our article provides a comprehensive review of the best 2-person gaming desks on the market, helping you make an informed decision for your shared workspace."
 
 publishDate: "2024-01-13T01:55:32Z"
 
@@ -87,8 +87,7 @@ module: "Shop"
 ```
 
 - (required): The `title` corresponds to the meta page title & the post's auto-generated `h1` tag.
-- (optional): The `excerpt` corresponds to the meta description & any excerpt shown on a blog-roll / collection type page
+- (optional): The `description` corresponds to the meta description & any description shown on a blog-roll / collection type page
 - (optional): The `publishDate` field should be flexible to accept any format of date, but display it in an en-US readable manner
 - (optional): The `image` field corresponds to the posts `og image`, `featured image` and "preview image" for any blog-roll / collection page
 - (optional): The `category` field corresponds to including the post in the specified `/category/[slug]/` page
-- (required): The `module` field determins where in the website's page routes this post belongs. For example a `"shop"` post would go on the designated `/shop/*` routes. This could also be handled by a folder rather than a frontmatter field -- whatever is more common/native to Nuxt content.

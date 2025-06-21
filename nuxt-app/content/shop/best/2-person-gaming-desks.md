@@ -4,7 +4,7 @@ title: "2 Person Gaming Desks"
 
 slug: "/shop/best/2-person-gaming-desks/"
 
-excerpt: "Discover the perfect gaming desk for two, seamlessly accommodating collaborative gameplay and simultaneous setup. Our article provides a comprehensive review of the best 2-person gaming desks on the market, helping you make an informed decision for your shared workspace."
+description: "Discover the perfect gaming desk for two, seamlessly accommodating collaborative gameplay and simultaneous setup. Our article provides a comprehensive review of the best 2-person gaming desks on the market, helping you make an informed decision for your shared workspace."
 
 publishDate: "2024-01-13T01:55:32Z"
 
