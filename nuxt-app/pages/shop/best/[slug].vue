@@ -69,12 +69,11 @@ useHead({
         <ContentRenderer v-if="post" :value="post" />
 
       
-        <div class="mt-16 p-8 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800">
-          <h2 class="text-2xl font-bold mb-4">Related Links</h2>
-          <p class="text-gray-600 dark:text-gray-400">
-            Link hub coming soon...
-          </p>
-        </div>
+        <ContentLinkHub 
+          collection="shop" 
+          :current-path="post.slug || post._path"
+          title="More Shopping Guides"
+        />
       </article>
     </UContainer>
 
