@@ -67,22 +67,13 @@ useHead({
         </div>
 
         <ContentRenderer v-if="post" :value="post" />
-
       
         <ContentLinkHub 
           collection="shop" 
           :current-path="post.slug || post._path"
-          title="More Shopping Guides"
+          title="Related"
         />
       </article>
-    </UContainer>
-
-    <!-- Post Not Found -->
-    <UContainer v-else class="py-16 text-center">
-      <h1 class="text-2xl font-bold mb-4">Post not found</h1>
-      <UButton to="/shop" variant="ghost" icon="i-lucide-arrow-left">
-        Back to Shop
-      </UButton>
     </UContainer>
   </div>
 </template>
