@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:content.nuxt.com)",
+      "WebFetch(domain:nuxt.com)"
+    ],
+    "deny": []
+  }
+}
