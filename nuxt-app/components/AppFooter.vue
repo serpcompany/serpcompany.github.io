@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
+const appConfig = useAppConfig()
 
 const items: NavigationMenuItem[] = [
   {
@@ -45,7 +46,7 @@ const items: NavigationMenuItem[] = [
         icon="i-simple-icons-x"
         color="neutral"
         variant="ghost"
-        to="https://x.com/{{  }}"
+        to="https://serp.ly/@{{ appConfig.serplyUsername }}"
         target="_blank"
         aria-label="X"
       />

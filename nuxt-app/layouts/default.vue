@@ -1,11 +1,9 @@
 <template>
   <div>
   <UHeader />
-  <UContainer>
-    <UMain>
+    <UPage>
       <slot />
-    </UMain>
-  </UContainer>
+    </UPage>
   <AppFooter />
   </div>
 </template>
