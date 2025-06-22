@@ -5,6 +5,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui-pro', // must come BEFORE @nuxt/content
+    '@nuxtjs/sitemap', // must come BEFORE @nuxt/content
+    '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
@@ -36,5 +38,29 @@ export default defineNuxtConfig({
     app: {
       baseURL: process.env.NUXT_APP_BASE_URL || '/'
     }
-  }
+  },
+
+  // NUXT SEO STUFF
+  sitemap: {
+    experimentalCompression: true,
+    experimentalWarmUp: true,
+    cacheMaxAgeSeconds: 60 * 60 * 24,
+    sitemaps: {
+      pages: {
+        includeAppSources: true,
+        chunkSize: 50000,
+      },
+      shop: {
+        sources: ['/api/__sitemap__/shop/'],
+        chunkSize: 50000,
+      },
+    }
+  },
+  ogImage: {
+    enabled: false
+  },
+  linkChecker: {
+    enabled: false
+  },
+ 
 })
