@@ -11,7 +11,7 @@ watch(() => route.query.page, (newPage) => {
 })
 
 // Items per page
-const itemsPerPage = 20
+const itemsPerPage = 100
 
 // Fetch total count
 const { data: totalCount } = await useAsyncData(

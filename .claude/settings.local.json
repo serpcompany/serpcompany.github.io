@@ -11,7 +11,10 @@
       "Bash(find:*)",
       "Bash(ls:*)",
       "WebFetch(domain:github.com)",
-      "Bash(gh auth switch:*)"
+      "WebFetch(domain:serp.games)",
+      "WebFetch(domain:serp.games)",
+      "WebFetch(domain:serp.games)",
+      "WebFetch(domain:serp.games)"
     ],
     "deny": []
   }
