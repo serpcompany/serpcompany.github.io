@@ -43,6 +43,7 @@ export default defineNuxtConfig({
     experimentalCompression: true,
     experimentalWarmUp: true,
     cacheMaxAgeSeconds: 60 * 60 * 24,
+    xsl: false, // Disable XSL to fix xmlEscape undefined error
     sitemaps: {
       pages: {
         includeAppSources: true,
