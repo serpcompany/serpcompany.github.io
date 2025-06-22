@@ -1,6 +1,14 @@
+<script setup lang='ts'>
+const appConfig = useAppConfig();
+</script>
+
 <template>
   <div>
-  <UHeader />
+  <AppHeader :title="appConfig.siteTitle" 
+    :ui="{
+      toggle: 'md:hidden',
+    }"
+  />
     <UPage>
       <slot />
     </UPage>
