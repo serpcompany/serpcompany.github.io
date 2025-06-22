@@ -12,13 +12,15 @@ This theme should be thought of like a "blog theme" ... but for any "topic /  ki
 
 ## Customization
 
-1. Customize the .env file
-2. Customize the app.config.ts file
+1. Customize the `.env file`
+2. Customize the `app.config.ts` file
+3. Update the `public/_robots.txt` file
+4. Update the `nuxt.config.ts` file
 
 ## Technology stack
 
 - Nuxt
-- Nuxt UI 3+ / Nuxt UI Pro
+- Nuxt UI 3 + Nuxt UI Pro
 - TailwindCSS 4
 - Typescript
 - Nuxt Content
