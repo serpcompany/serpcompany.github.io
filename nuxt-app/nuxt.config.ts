@@ -39,6 +39,9 @@ export default defineNuxtConfig({
   },
 
   // NUXT SEO STUFF
+  site: {
+    url: 'https://serpcompany.github.io'
+  },
   sitemap: {
     experimentalCompression: true,
     experimentalWarmUp: true,
