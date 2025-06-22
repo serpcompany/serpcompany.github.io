@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://serpcompany.github.io/sitemap_index.xml
+

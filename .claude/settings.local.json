@@ -14,7 +14,8 @@
       "WebFetch(domain:serp.games)",
       "WebFetch(domain:serp.games)",
       "WebFetch(domain:serp.games)",
-      "WebFetch(domain:serp.games)"
+      "WebFetch(domain:serp.games)",
+      "WebFetch(domain:nuxtseo.com)"
     ],
     "deny": []
   }
