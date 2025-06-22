@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-
   modules: [
     '@nuxt/ui-pro', // must come BEFORE @nuxt/content
     '@nuxtjs/sitemap', // must come BEFORE @nuxt/content
@@ -15,7 +14,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/scripts',
   ],
-
+  // STYLES
   ui: {
     colorMode: false,
   },
@@ -25,15 +24,14 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
   },
-
   experimental: {
     payloadExtraction: false,
   },
 
+  // ENV specific
   app: {
     baseURL: '/'
   },
-
   $production: {
     app: {
       baseURL: process.env.NUXT_APP_BASE_URL || '/'
@@ -61,6 +59,19 @@ export default defineNuxtConfig({
   },
   linkChecker: {
     enabled: false
+  },
+
+  // NUXT SCRIPTS
+  scripts: {
+    registry: {
+      googleAdsense: {
+        client: "ca-pub-2343633734899216",
+        autoAds: true,
+      },
+      googleAnalytics: {
+        id: process.env.GOOGLE_ANALYTICS_ACCOUNT_ID as string,
+      }
+    },
   },
  
 })
