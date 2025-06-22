@@ -37,11 +37,11 @@ useHead({
         
         <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ post.title }}</h1>
         
-        <p v-if="post.description" class="text-lg text-gray-600 dark:text-gray-400 mb-4">
+        <p v-if="post.description" class="text-lg text-gray-600 mb-4">
           {{ post.description }}
         </p>
         
-        <div class="flex flex-wrap items-center gap-4 mb-8 text-sm text-gray-500 dark:text-gray-400">
+        <div class="flex flex-wrap items-center gap-4 mb-8 text-sm text-gray-500">
           <time v-if="post.publishDate">
             {{ new Date(post.publishDate).toLocaleDateString('en-US', { 
               year: 'numeric', 
