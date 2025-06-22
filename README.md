@@ -26,15 +26,6 @@ This theme should be thought of like a "blog theme" ... but for any "topic /  ki
 
 This site should render SSG and be able to deploy to github pages or cloudflare pages as a statically generated site. However, as the sites get larder (10,000 - 100,000+ markdown posts) SSG rendered sites can take hours to build -- and sometimes not build at all. We should plan for this and have a strategy in mind to make sure we don't get stuck like that.
 
-## Project Rules
-
-- Make SIMPLE decisions
-- Reach for NuxtUI / NuxtUI PRO native components, props, utility classes, APIs, etc. before doing anything custom.
-- Dont add extra features that arent necessary in an MVP (like dark mode, color themes, etc.)
-- DO make sure you use as much NUXT UI / PRO components and layouts and containers as possible to make things as natively mobile responsive as possible, but also always develop mobile first.
-- Use tailwind v4 utility classes instead of custom CSS. Prefer simple designs (or really no design at all) to making things "look cool".
-
-
 ## Pages
 
 ### Core
