@@ -45,7 +45,7 @@ const gridClasses = computed(() => {
         </template>
         
         <h3 class="text-lg font-semibold mb-2">{{ item.title }}</h3>
-        <p v-if="item.excerpt || item.description" class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">
+        <p v-if="item.excerpt || item.description" class="text-sm text-gray-600 line-clamp-2">
           {{ item.excerpt || item.description }}
         </p>
         

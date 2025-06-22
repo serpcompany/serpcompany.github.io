@@ -42,18 +42,18 @@ const footerColumns: NavigationMenuItem[] = [
 </script>
 
 <template>
-  <div class="border-t border-gray-200 dark:border-gray-800 mt-12">
+  <div class="border-t border-gray-200 mt-12">
     <div class="container mx-auto px-4 py-12">
       <!-- Main footer content -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
         <div v-for="column in footerColumns" :key="column.label" class="space-y-3">
-          <h3 class="font-semibold text-gray-900 dark:text-white">{{ column.label }}</h3>
+          <h3 class="font-semibold text-gray-900">{{ column.label }}</h3>
           <ul class="space-y-2">
             <li v-for="link in column.items" :key="link.label">
               <NuxtLink 
                 :to="link.to" 
                 :target="link.target"
-                class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                class="text-sm text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {{ link.label }}
               </NuxtLink>
@@ -63,9 +63,9 @@ const footerColumns: NavigationMenuItem[] = [
       </div>
 
       <!-- Bottom bar -->
-      <div class="pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p class="text-sm text-gray-600 dark:text-gray-400">
-          © {{ new Date().getFullYear() }} <NuxtLink to="https://serp.co" class="hover:text-gray-900 dark:hover:text-white">SERP</NuxtLink>. All rights reserved.
+      <div class="pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-600">
+          © {{ new Date().getFullYear() }} <NuxtLink to="https://serp.co" class="hover:text-gray-900">SERP</NuxtLink>. All rights reserved.
         </p>
         
         <!-- Social links -->
